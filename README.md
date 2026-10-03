@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a production-style Azure cloud environment built with Terraform.
+This project is a production style Azure cloud environment built with Terraform.
 
 It demonstrates how to provision, secure, monitor, and automate Azure infrastructure using Infrastructure as Code and CI/CD.
 
