@@ -17,7 +17,7 @@ resource "azurerm_subnet" "app" {
       name = "Microsoft.App/environments"
 
       actions = [
-        "Microsoft.Network/virtualNetworks/subnets/action"
+        "Microsoft.Network/virtualNetworks/subnets/join/action"
       ]
     }
   }

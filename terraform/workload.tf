@@ -48,7 +48,9 @@ resource "azurerm_function_app_flex_consumption" "app" {
     identity_ids = [azurerm_user_assigned_identity.app.id]
   }
 
-  site_config {}
+  site_config {
+    application_insights_connection_string = azurerm_application_insights.main.connection_string
+  }
 
   app_settings = {
     KEY_VAULT_URI = azurerm_key_vault.main.vault_uri

@@ -28,3 +28,10 @@ output "function_app_name" {
 output "function_app_hostname" {
   value = azurerm_function_app_flex_consumption.app.default_hostname
 }
+output "log_analytics_workspace_name" {
+  value = azurerm_log_analytics_workspace.main.name
+}
+
+output "application_insights_name" {
+  value = azurerm_application_insights.main.name
+}
